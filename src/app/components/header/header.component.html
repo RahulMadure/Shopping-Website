@@ -1,0 +1,16 @@
+<div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+       <button routerLink="product"><i style="font-size: 40px; margin-left: 5px;"class="fa-brands fa-shopify"></i></button> 
+        <strong style="font-size: 28px">&nbsp;BluKart</strong>
+        <div class="from-group">
+            <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search product">
+        </div>
+        <span class="fas fa-search search-icon"></span>
+     </div>    
+
+        <button routerLink="cart" class="btn btn-primary">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 12px;"class="badge bg-danger">{{totalItem}}</div>
+        </button>
+
+</div>
